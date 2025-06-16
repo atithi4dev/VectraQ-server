@@ -1,0 +1,11 @@
+body {
+  @apply bg-white text-gray-900 antialiased;
+}
+
+h1, h2, h3, h4 {
+  @apply font-semibold;
+}
+
+button {
+  @apply transition-all duration-200 ease-in-out;
+}
