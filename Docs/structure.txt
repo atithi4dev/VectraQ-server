@@ -1,0 +1,24 @@
+📤 User Interaction Layer
+   └── Upload Interface ───────────►
+
+🧠 Document Ingestion Engine
+   └── PDF Decoder (Multer + PDF Parser)
+       └── Raw Text Extractor
+           └── Intelligent Text Chunker (LangChain)
+
+🔗 Semantic Memory Builder
+   └── Embedding Generator (OpenAI Embeddings)
+       └── Vector Database Indexer (ChromaDB / Pinecone)
+
+🧮 Contextual Question Synthesizer
+   └── Dynamic Query Generator (LLM-powered)
+       └── Suggested Questions Panel (Frontend UI)
+
+🗃️ Query Handling & Response Engine
+   └── Query Embedder → Top-K Retriever
+       └── Context Aggregator
+           └── Answer Generator (OpenAI Chat API)
+
+📬 Answer Delivery & Feedback Interface
+   └── Response Viewer with Context Tracing
+       └── Interactive Follow-up / Custom Query Input
