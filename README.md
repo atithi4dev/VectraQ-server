@@ -11,7 +11,7 @@ This repository serves as the **monorepo** for both the frontend and backend of 
 
 - Upload and parse PDF files
 - Chunk and embed content using LangChain + OpenAI
-- Store embeddings in a vector database (ChromaDB)
+- Store embeddings in a vector database (Pinecone)
 - Allow users to ask questions about uploaded documents
 - Generate context-aware answers using OpenAI's Chat API
 - Display interactive Q&A on a clean, responsive frontend
