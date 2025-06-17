@@ -1,11 +1,9 @@
-import React from 'react'
-
 const Home = () => {
   return (
-    <div>
-      Hola mundo!
+    <div className="w-full h-[calc(100vh-5rem)] flex flex-col">
+      Home Screen
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
