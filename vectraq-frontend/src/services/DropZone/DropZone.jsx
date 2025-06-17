@@ -22,7 +22,7 @@ const DropZone = () => {
   // Set up dropzone with accepted file types and max files
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
     onDrop,
-    accept: { "image/*": [] },
+    accept: { "application/pdf/*": [] },
     maxFiles: 1,
   });
 
@@ -44,7 +44,7 @@ const DropZone = () => {
     try {
       const data = await uploadImage(files[0]);
       toast.success("File uploaded successfully. Processing...");
-      setExtractedText(data.text || "No text extracted.");
+      setExtractedText(data.data.text || "No text extracted.");
     } catch (error) {
       toast.error("Upload failed.");
     }
@@ -93,7 +93,7 @@ const DropZone = () => {
             className="w-full sm:w-60 h-60 overflow-hidden rounded-md shadow"
           >
             <img
-              src={file.preview}
+              src="image.png"
               alt="preview"
               className="object-contain w-full h-full"
             />

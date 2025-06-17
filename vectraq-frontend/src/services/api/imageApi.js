@@ -6,12 +6,13 @@ export const uploadImage = async (file) => {
   formData.append("file", file);
 
   const response = await axios.post(
-    `${BASE_URL}/upload`,
+    `${BASE_URL}/pdf/upload`,
     formData,
     {
       headers: { "Content-Type": "multipart/form-data" },
     }
   );
+
 
   return response.data;
 };
