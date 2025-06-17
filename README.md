@@ -25,7 +25,7 @@ This repository serves as the **monorepo** for both the frontend and backend of 
 | Frontend   | React, Vite, Tailwind CSS  |
 | Backend    | Node.js, Express.js        |
 | NLP        | LangChain, OpenAI API      |
-| Vector DB  | ChromaDB                   |
+| Vector DB  | Pinecone                   |
 | Others     | Multer, pdf-parse, Axios   |
 
 ---
